@@ -15,6 +15,7 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 find_package(Boost 1.40 COMPONENTS program_options REQUIRED)
 find_package(CURL REQUIRED)
+find_package(Qt5 COMPONENTS WebKitWidgets REQUIRED)
 set(MYSQL_CONNECTOR_CPP_LIBRARIES "/usr/lib/x86_64-linux-gnu/libmysqlcppconn.so")
 include_directories(${MYSQL_CONNECTOR_CPP_INCLUDE_DIRS})
 set(PROJECT_SOURCES
@@ -25,6 +26,7 @@ set(PROJECT_SOURCES
         database.cpp
         database.h
         database.ui
+        br.html
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -63,6 +65,7 @@ target_link_libraries(AppParsing Qt5::Core)
 target_link_libraries(AppParsing CURL::libcurl)
 target_link_libraries(AppParsing Boost::program_options)
   target_link_libraries(AppParsing ${MYSQL_CONNECTOR_CPP_LIBRARIES})
+target_link_libraries(AppParsing Qt5::WebKitWidgets)
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(AppParsing)

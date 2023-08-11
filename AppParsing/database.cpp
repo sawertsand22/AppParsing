@@ -1,3 +1,4 @@
+#pragma execution_character_set("utf-8")
 #include "database.h"
 #include "ui_database.h"
 #include "qmessagebox.h"
@@ -25,7 +26,9 @@
 #include <QDesktopServices>
 #include <QUrl>
 #include <QtWebKit/QtWebKit>
-
+#include <QWebView>
+#include <qlocale.h>
+#include <QTranslator>
 std::string base64_encode(const std::string &s)
 {
     static const std::string base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -572,8 +575,9 @@ void DataBase::on_pushButton_4_clicked()
     connectToDatabase();
    //QString name = ui->comboBox_2->(ui->comboBox_2->currentIndex());
     QString name = ui->comboBox_2->currentText();
+    std::string nm = name.toStdString();
     std::cout<<name.toStdString()<<std::endl;
-    std::string dcd = "select context from links where name = 'po'";
+    std::string dcd = "select context from links where name = '"+nm+"'";
     sql::ResultSet *res =executeQuery(dcd);
     std::string row;
     while(res->next())
@@ -582,28 +586,38 @@ void DataBase::on_pushButton_4_clicked()
 
     }
   row = base64_decode(row);
-    std::cout<<row
-            <<std::endl;
+    std::cout<<row<<std::endl;
 
     std::ofstream brows;
      brows.open("br.html");
      if (brows.is_open())
      {
+         std::cout<<"file rewriting"<<std::endl;
          brows << row ;
+
      }
     brows.close();
+   std::cout<<row<<std::endl;
   //  QString rr= QString::fromStdString(row);
-  //  QString filePath = "br.html";
-  //  QUrl fileUrl = QUrl::fromLocalFile(filePath);
+   // QString filePath = "br.html";
+   // QUrl fileUrl = QUrl::fromLocalFile(filePath);
   //  QDesktopServices::openUrl(fileUrl);
  //   QTextBrowser *tb = new QTextBrowser(this);
-   // tb->setOpenExternalLinks(true);
-   // tb->setHtml(rr);
-    QString filePath = "br.html"; // Укажите путь к вашему HTML-файлу
-      QUrl url = QUrl::fromLocalFile(filePath);
-    //  ui->webView->load(url);
-      // ui->webView->show();
+  // tb->setOpenExternalLinks(true);
+  //  tb->setHtml(rr);
+   // QString filePath = "br.html"; // Укажите путь к вашему HTML-файлу
+   QTranslator qtTranslator;
+    qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
 
-      QDesktopServices::openUrl(QUrl("br.html"));
+   QWebView *myWebView = new QWebView;
+    myWebView->setHtml(QString::fromStdString(row));
+  // myWebView->load(QUrl("file:///home/sawert/qtprojects/build-AppParsing-unknown-Debug/br.html"));
 
+   myWebView->show();
+   // ui->webView->load(QString::fromStdString(row));
+   // ui->webView->show();
+        // Отображение QWebView
+       // ui->webView->show();
+      //QDesktopServices::openUrl(QUrl("br.html"));
+closeConnection();
 }
