@@ -1454,7 +1454,15 @@ CMakeFiles/AppParsing.dir/database.cpp.o: /home/sawert/qtprojects/AppParsing/dat
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont \
   /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebpluginfactory.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsecurityorigin.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/QWebView \
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebview.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebpage.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebfullscreenrequest.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator
 
 CMakeFiles/AppParsing.dir/main.cpp.o: /home/sawert/qtprojects/AppParsing/main.cpp \
   /usr/include/stdc-predef.h \
@@ -2350,6 +2358,10 @@ CMakeFiles/AppParsing.dir/mainwindow.cpp.o: /home/sawert/qtprojects/AppParsing/m
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebpage.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/QWebView:
+
 /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont:
@@ -2857,6 +2869,8 @@ CMakeFiles/AppParsing.dir/mainwindow.cpp.o: /home/sawert/qtprojects/AppParsing/m
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h:
 
 /usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebview.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
@@ -3723,6 +3737,8 @@ AppParsing_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/boost/assert.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator:
 
 /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qnetworkcookiejar.h:
 

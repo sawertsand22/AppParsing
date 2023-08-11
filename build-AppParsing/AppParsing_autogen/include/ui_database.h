@@ -46,7 +46,7 @@ public:
     {
         if (DataBase->objectName().isEmpty())
             DataBase->setObjectName(QString::fromUtf8("DataBase"));
-        DataBase->resize(800, 600);
+        DataBase->resize(801, 521);
         label = new QLabel(DataBase);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 10, 181, 17));

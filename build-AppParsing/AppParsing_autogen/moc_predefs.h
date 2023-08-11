@@ -107,6 +107,7 @@
 #define __SIZEOF_LONG__ 8
 #define __STDC_IEC_559__ 1
 #define __STDC_ISO_10646__ 201706L
+#define QT_WEBKITWIDGETS_LIB 1
 #define __UINT16_C(c) c
 #define __DECIMAL_DIG__ 21
 #define __STDC_IEC_559_COMPLEX__ 1
@@ -203,10 +204,11 @@
 #define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "11.3.0"
+#define __VERSION__ "11.4.0"
 #define __UINT64_C(c) c ## UL
 #define __cpp_unicode_characters 201411L
 #define _STDC_PREDEF_H 1
+#define QT_WEBKIT_LIB 1
 #define __INT_LEAST32_MAX__ 0x7fffffff
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
 #define __FLT128_MAX_EXP__ 16384
@@ -275,6 +277,7 @@
 #define __INT_LEAST16_MAX__ 0x7fff
 #define __DEC64_MANT_DIG__ 16
 #define __INT64_MAX__ 0x7fffffffffffffffL
+#define QT_NETWORK_LIB 1
 #define __SEG_GS 1
 #define __FLT32_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F32
 #define __SIG_ATOMIC_WIDTH__ 32
@@ -399,7 +402,7 @@
 #define __DEC128_MAX_EXP__ 6145
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 3
+#define __GNUC_MINOR__ 4
 #define __GLIBCXX_TYPE_INT_N_0 __int128
 #define __INT_FAST16_WIDTH__ 64
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL

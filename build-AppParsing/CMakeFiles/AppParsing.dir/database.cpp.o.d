@@ -952,4 +952,12 @@ CMakeFiles/AppParsing.dir/database.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebpluginfactory.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsecurityorigin.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/QWebView \
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebview.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets/qwebpage.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebfullscreenrequest.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWebKit/qwebsettings.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator

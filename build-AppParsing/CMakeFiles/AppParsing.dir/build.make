@@ -140,11 +140,14 @@ AppParsing: CMakeFiles/AppParsing.dir/main.cpp.o
 AppParsing: CMakeFiles/AppParsing.dir/mainwindow.cpp.o
 AppParsing: CMakeFiles/AppParsing.dir/database.cpp.o
 AppParsing: CMakeFiles/AppParsing.dir/build.make
-AppParsing: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
 AppParsing: /usr/lib/x86_64-linux-gnu/libcurl.so
 AppParsing: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
 AppParsing: /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so
+AppParsing: /usr/lib/x86_64-linux-gnu/libQt5WebKitWidgets.so.5.212.0
+AppParsing: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+AppParsing: /usr/lib/x86_64-linux-gnu/libQt5WebKit.so.5.212.0
 AppParsing: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
+AppParsing: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.3
 AppParsing: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 AppParsing: CMakeFiles/AppParsing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sawert/qtprojects/build-AppParsing-unknown-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AppParsing"

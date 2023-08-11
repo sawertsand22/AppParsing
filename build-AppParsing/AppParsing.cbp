@@ -5,7 +5,7 @@
 		<Option title="AppParsing"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\qtcreator\;CMake Files\..\..\..\..\usr\share\qtcreator\package-manager\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_program_options-1.74.0\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\qtcreator\;CMake Files\..\..\..\..\usr\share\qtcreator\package-manager\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_program_options-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/sawert/qtprojects/build-AppParsing-unknown-Debug"/>
@@ -29,6 +29,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DBOOST_ALL_NO_LIB"/>
 					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DQT_WEBKITWIDGETS_LIB"/>
+					<Add option="-DQT_WEBKIT_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
 					<Add directory="/home/sawert/qtprojects/build-AppParsing-unknown-Debug"/>
 					<Add directory="/home/sawert/qtprojects/AppParsing"/>
 					<Add directory="/home/sawert/qtprojects/build-AppParsing-unknown-Debug/AppParsing_autogen/include"/>
@@ -39,6 +42,9 @@
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWebKit"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -64,6 +70,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DBOOST_ALL_NO_LIB"/>
 					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DQT_WEBKITWIDGETS_LIB"/>
+					<Add option="-DQT_WEBKIT_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
 					<Add directory="/home/sawert/qtprojects/build-AppParsing-unknown-Debug"/>
 					<Add directory="/home/sawert/qtprojects/AppParsing"/>
 					<Add directory="/home/sawert/qtprojects/build-AppParsing-unknown-Debug/AppParsing_autogen/include"/>
@@ -74,6 +83,9 @@
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWebKitWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWebKit"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -146,6 +158,9 @@
 			<Option target="AppParsing"/>
 		</Unit>
 		<Unit filename="/home/sawert/qtprojects/build-AppParsing-unknown-Debug/AppParsing_autogen/mocs_compilation.cpp">
+			<Option target="AppParsing"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/build-AppParsing-unknown-Debug/br.html">
 			<Option target="AppParsing"/>
 		</Unit>
 		<Unit filename="/home/sawert/qtprojects/AppParsing/CMakeLists.txt">
@@ -297,6 +312,45 @@
 		</Unit>
 		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_program_options-1.74.0/libboost_program_options-variant-static.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_program_options-1.74.0\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKitWidgets/Qt5WebKitWidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKitWidgets/Qt5WebKitWidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKitWidgets/Qt5WebKitWidgetsTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKitWidgets/Qt5WebKitWidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKit/Qt5WebKitConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKit/Qt5WebKitConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKit/WebKitTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5WebKit/WebKitTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/sawert/qtprojects/AppParsing/../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
