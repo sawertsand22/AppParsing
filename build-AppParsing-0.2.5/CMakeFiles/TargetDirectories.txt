@@ -1,0 +1,4 @@
+/home/sawert/qtprojects/build-AppParsing-unknown-Debug/CMakeFiles/AppParsing.dir
+/home/sawert/qtprojects/build-AppParsing-unknown-Debug/CMakeFiles/edit_cache.dir
+/home/sawert/qtprojects/build-AppParsing-unknown-Debug/CMakeFiles/rebuild_cache.dir
+/home/sawert/qtprojects/build-AppParsing-unknown-Debug/CMakeFiles/AppParsing_autogen.dir
